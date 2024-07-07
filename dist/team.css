@@ -1,0 +1,285 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@font-face {
+    font-family: nike;
+    src: url(assets/fonts/6e77a69850838bf4.ttf);
+}
+@font-face {
+    font-family: font;
+    src: url(assets/fonts/f4a4501e5640e15c.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    }
+    html,body{
+    height: 100%;
+    width: 100%;font-family: nike;
+
+    }
+    .nav{
+        height: 10vh;
+        width: 100vw;
+        background-color:#ffff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding: 0 3vw;
+        position: fixed;
+    }
+    .nav i{
+        font-size: 2vw;
+    }
+    .team{
+        height: 100vh;
+        width: 100vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 2vw;
+        padding-top: 15vw;
+        /* background-color: aquamarine; */
+    }
+    .team img{
+        height: 70vh;
+        width: 50vw;
+        object-fit: contain;
+        object-position: center;
+    }
+    .team h1{
+        font-family: nike;
+        font-weight: 600;
+        font-size: 4vw;
+    }
+    .team p{
+        font-family: nike;
+        font-weight: 600;
+        font-size: 1.5vw;
+        width: 40vw;
+        text-align: center;
+    }
+    .member{
+        height: 240vh;
+        width: 100vw;
+        margin-top: 40vh;
+        padding: 0 4vw;
+    }
+    .heading{
+        height: 15vh;
+        width: 70vw;
+        overflow: hidden;
+        border-bottom: 4px solid #000;
+    }
+    .heading h1{
+        font-size: 5vw;
+        font-family:nike;
+        font-weight: 600;
+        -webkit-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+    }
+    .heading:hover h1{
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    .team-members{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        /* flex-direction: column; */
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        gap: 10vw;
+        margin-top: -10vw;
+    }
+    .group-1{
+        height: 150vh ;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-top: 0;
+    }
+    .group-2{
+        height: 150vh ;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-top: 40vw;
+    }
+    .members{
+        height: 70vh;
+        width: 20vw;
+        /* background-color: aqua; */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 1vw;
+    }
+    .members img{
+        height: 70%;
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center;
+    }
+    .members h1{
+        font-family: nike;
+        font-weight: 600;
+        font-size: 1.5vw;
+        text-transform: uppercase;
+    }
+    .members h6{
+        font-family: nike;
+        font-weight: 600;
+        font-size: 0.7vw;
+        text-transform: capitalize;
+        text-decoration:underline;
+    }
+    .follow{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 1vw;
+        margin-top: 1vw;
+    }
+    .follow i{
+        font-size: 1vw;
+        color: #000;
+        background-color: rgb(237, 237, 237);
+        padding: 0.8vw;
+        border-radius: 50%;
+    }
+    
+    @media (max-width:600px) {
+        .mouseFollower{
+            display: none!important;
+            opacity: 0!important;
+            scale: 0!important;
+        }
+        .nav img{
+            height: 5vh;
+            z-index: 999999;
+        }
+        .nav i{
+           font-size: 6vw !important;
+        }
+        .team{
+            gap: 4vw;
+            padding-top: 10vw;
+        }
+        .team img{
+            height: 45vh;
+            width: 100vw;
+        }
+        .team h1{
+            font-size: 9vw;
+        }
+        .team p{
+            font-size: 5vw;
+            width: 90vw;
+        }
+        .member{
+            height: 100vh;
+            margin-top: 0vh;
+        }
+        .heading{
+            height: 5vh;
+            width: 90vw;
+        }
+        .heading h1{
+            font-size: 7.2vw;
+        }
+        .team-members{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            margin-top: -10vw;
+        }
+        .group-1{
+            height: 120vh ;
+            gap: 10vw;
+            margin-top: 30vw;
+        }
+        .group-2{
+            height: 120vh ;
+            gap: 10vw;
+            margin-top: 0vw;
+        }
+        .members{
+            height: 100vh;
+            width: 70vw;
+            gap: 5vw;
+            margin-bottom: 5vw;
+        }
+        .members h1{
+            font-size: 5.5vw;
+        }
+        .members h6{
+            font-size: 3vw;
+        }
+        .follow{
+            gap: 3vw;
+            margin-top: 0vw;
+        }
+        .follow i{
+            font-size: 5vw;
+            padding: 1.5vw;
+            border-radius: 50%;
+        }
+    }
+
+/*# sourceMappingURL=team.css.map*/
